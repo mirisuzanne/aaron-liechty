@@ -1,0 +1,49 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+
+/* TEAM */
+  Author: Aaron Liechty
+  Site: http://aaronliechty.tumblr.com/
+  Twitter:
+  Location: Denver, CO
+
+  Designer & Developer: Eric A. Meyer
+  Site: http://eric.andmeyer.com/
+  Twitter: @eriiicam
+  Location: Denver, CO
+
+/* THANKS */
+  Names (& URL):
+
+/* SITE */                          
+  Last update: 2012/05/24 
+  Standards: HTML5, CSS3
+  Components: Modernizr, jQuery, H5bp, Compass, Sass, Susy
+  Software: Sublime Text 2
+
+
+
+                               -o/-
+                               +oo//-
+                              :ooo+//:
+                             -ooooo///-
+                             /oooooo//:
+                            :ooooooo+//-
+                           -+oooooooo///-
+           -://////////////+oooooooooo++////////////::
+            :+ooooooooooooooooooooooooooooooooooooo+:::-
+              -/+ooooooooooooooooooooooooooooooo+/::////:-
+                -:+oooooooooooooooooooooooooooo/::///////:-
+                  --/+ooooooooooooooooooooo+::://////:-
+                     -:+ooooooooooooooooo+:://////:--
+                       /ooooooooooooooooo+//////:-
+                      -ooooooooooooooooooo////-
+                      /ooooooooo+oooooooooo//:
+                     :ooooooo+/::/+oooooooo+//-
+                    -oooooo/::///////+oooooo///-
+                    /ooo+::://////:---:/+oooo//:
+                   -o+/::///////:-      -:/+o+//-
+                   :-:///////:-            -:/://
+                     -////:-                 --//:
+                       --                       -:

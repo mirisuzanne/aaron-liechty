@@ -1,0 +1,16 @@
+// ---------------------------------------------------------------------------
+// Imports
+
+@import "font-license";
+
+//-----------------------------------------------------------------------------
+// Settings
+
+$sans-stack   : 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$serif-stack  : Georgia, serif;
+
+//-----------------------------------------------------------------------------
+// Mixins
+
+@mixin serif { font-family: $font-stack; }
+@mixin sans { font-family: $sans-stack; }

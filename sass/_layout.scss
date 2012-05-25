@@ -1,0 +1,31 @@
+//-----------------------------------------------------------------------------
+// Layout
+
+.container {
+  @include container;
+  @include susy-grid-background;
+  @include padding-leader;
+  @include padding-trailer;
+
+  @include at-breakpoint($break) {
+    @include container;
+    @include susy-grid-background;  
+  }
+}
+
+[role="banner"], 
+[role="contentinfo"] {
+  @extend .container;
+}
+
+[role="main"] {
+  @include at-breakpoint($break) {
+    @include span-columns(7,10);
+  }
+}
+
+[role="navigation"] {
+  @include at-breakpoint($break) {
+    @include span-columns(3 omega,10);
+  }
+}

@@ -1,0 +1,25 @@
+//-----------------------------------------------------------------------------
+// Imports
+
+@import "compass";
+@import "susy";
+
+//-----------------------------------------------------------------------------
+// Grid Settings
+
+$total-columns: 4;
+$column-width: 5em;
+$gutter-width: 1em;
+$grid-padding: $gutter-width;
+
+$min    : 40em;
+$lay    : 10;
+$ie     : lt-ie9;
+$break  : $min $lay $ie;
+
+//-----------------------------------------------------------------------------
+// Other Settings
+
+@import "colors";
+@import "size";
+@import "type";
