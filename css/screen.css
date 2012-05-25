@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* line 17, ../../../../../Sites/.venvs/aaron/rubygems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +20,37 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../Sites/.venvs/aaron/rubygems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../Sites/.venvs/aaron/rubygems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../Sites/.venvs/aaron/rubygems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../Sites/.venvs/aaron/rubygems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../Sites/.venvs/aaron/rubygems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../Sites/.venvs/aaron/rubygems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../Sites/.venvs/aaron/rubygems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../Sites/.venvs/aaron/rubygems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -87,32 +78,98 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  *
  *
  */
-/* line 66, ../../../../../Sites/.venvs/aaron/rubygems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/typography/_vertical_rhythm.scss */
+@font-face {
+  font-family: "FranklinGothicFS";
+  src: url('../fonts/FranklinGothic-Book-webfont.eot');
+  src: url('../fonts/FranklinGothic-Book-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-Book-webfont.woff') format('woff'), url('../fonts/FranklinGothic-Book-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-Book-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FranklinGothicFS";
+  src: url('../fonts/FranklinGothic-BookIt-webfont.eot');
+  src: url('../fonts/FranklinGothic-BookIt-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-BookIt-webfont.woff') format('woff'), url('../fonts/FranklinGothic-BookIt-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-BookIt-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "FranklinGothicFS";
+  src: url('../fonts/FranklinGothic-Med-webfont.eot');
+  src: url('../fonts/FranklinGothic-Med-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-Med-webfont.woff') format('woff'), url('../fonts/FranklinGothic-Med-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-Med-webfont.svg#webfont') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FranklinGothicFS";
+  src: url('../fonts/FranklinGothic-MedIt-webfont.eot');
+  src: url('../fonts/FranklinGothic-MedIt-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-MedIt-webfont.woff') format('woff'), url('../fonts/FranklinGothic-MedIt-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-MedIt-webfont.svg#webfont') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "FranklinGothicFSCd";
+  src: url('../fonts/FranklinGothic-Cd-webfont.eot');
+  src: url('../fonts/FranklinGothic-Cd-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-Cd-webfont.woff') format('woff'), url('../fonts/FranklinGothic-Cd-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-Cd-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FranklinGothicFSCd";
+  src: url('../fonts/FranklinGothic-CdIt-webfont.eot');
+  src: url('../fonts/FranklinGothic-CdIt-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-CdIt-webfont.woff') format('woff'), url('../fonts/FranklinGothic-CdIt-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-CdIt-webfont.svg#webfont') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "FranklinGothicFSCd";
+  src: url('../fonts/FranklinGothic-MedCd-webfont.eot');
+  src: url('../fonts/FranklinGothic-MedCd-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-MedCd-webfont.woff') format('woff'), url('../fonts/FranklinGothic-MedCd-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-MedCd-webfont.svg#webfont') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "FranklinGothicFSCd";
+  src: url('../fonts/FranklinGothic-MedCdIt-webfont.eot');
+  src: url('../fonts/FranklinGothic-MedCdIt-webfont.eot?#iefix') format('eot'), url('../fonts/FranklinGothic-MedCdIt-webfont.woff') format('woff'), url('../fonts/FranklinGothic-MedCdIt-webfont.ttf') format('truetype'), url('../fonts/FranklinGothic-MedCdIt-webfont.svg#webfont') format('svg');
+  font-weight: bold;
+  font-style: italic;
+}
+
 html {
   font-size: 100%;
   line-height: 1.25em;
 }
 
-/* line 17, ../sass/_general/_root.scss */
 html {
   text-shadow: rgba(255, 255, 255, 0.5) 0 1px 0;
+  font-family: "FranklinGothicFSCd", "Helvetica Neue", Arial, Helvetica, sans-serif;
   background: #fdf6e3;
-  color: #839496;
+  color: #586e75;
 }
 
-/* line 24, ../sass/_general/_root.scss */
+body {
+  overflow-x: hidden;
+}
+
 a:link, a:visited {
   color: #dc322f;
   text-decoration: none;
 }
-/* line 28, ../sass/_general/_root.scss */
 a:hover, a:focus, a:active {
-  color: #6c71c4;
+  color: #b58900;
 }
 
-/* line 4, ../sass/_layout.scss */
-.container, [role="banner"],
+.container, [role="banner"] hgroup,
 [role="contentinfo"] {
+  overflow: hidden;
+  *zoom: 1;
   *zoom: 1;
   max-width: 23em;
   _width: 23em;
@@ -120,13 +177,6 @@ a:hover, a:focus, a:active {
   margin-right: auto;
   padding-left: 1em;
   padding-right: 1em;
-  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(255, 254, 251, 0.5)), color-stop(21.739%, rgba(255, 254, 251, 0.5)), color-stop(21.739%, rgba(0, 0, 0, 0)), color-stop(26.087%, rgba(0, 0, 0, 0)), color-stop(26.087%, rgba(255, 254, 251, 0.5)), color-stop(47.826%, rgba(255, 254, 251, 0.5)), color-stop(47.826%, rgba(0, 0, 0, 0)), color-stop(52.174%, rgba(0, 0, 0, 0)), color-stop(52.174%, rgba(255, 254, 251, 0.5)), color-stop(73.913%, rgba(255, 254, 251, 0.5)), color-stop(73.913%, rgba(0, 0, 0, 0)), color-stop(78.261%, rgba(0, 0, 0, 0)), color-stop(78.261%, rgba(255, 254, 251, 0.5)), color-stop(100.0%, rgba(255, 254, 251, 0.5)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-  background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 254, 251, 0.5) 0%, rgba(255, 254, 251, 0.5) 21.739%, rgba(0, 0, 0, 0) 21.739%, rgba(0, 0, 0, 0) 26.087%, rgba(255, 254, 251, 0.5) 26.087%, rgba(255, 254, 251, 0.5) 47.826%, rgba(0, 0, 0, 0) 47.826%, rgba(0, 0, 0, 0) 52.174%, rgba(255, 254, 251, 0.5) 52.174%, rgba(255, 254, 251, 0.5) 73.913%, rgba(0, 0, 0, 0) 73.913%, rgba(0, 0, 0, 0) 78.261%, rgba(255, 254, 251, 0.5) 78.261%, rgba(255, 254, 251, 0.5) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-  background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 254, 251, 0.5) 0%, rgba(255, 254, 251, 0.5) 21.739%, rgba(0, 0, 0, 0) 21.739%, rgba(0, 0, 0, 0) 26.087%, rgba(255, 254, 251, 0.5) 26.087%, rgba(255, 254, 251, 0.5) 47.826%, rgba(0, 0, 0, 0) 47.826%, rgba(0, 0, 0, 0) 52.174%, rgba(255, 254, 251, 0.5) 52.174%, rgba(255, 254, 251, 0.5) 73.913%, rgba(0, 0, 0, 0) 73.913%, rgba(0, 0, 0, 0) 78.261%, rgba(255, 254, 251, 0.5) 78.261%, rgba(255, 254, 251, 0.5) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-  background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 254, 251, 0.5) 0%, rgba(255, 254, 251, 0.5) 21.739%, rgba(0, 0, 0, 0) 21.739%, rgba(0, 0, 0, 0) 26.087%, rgba(255, 254, 251, 0.5) 26.087%, rgba(255, 254, 251, 0.5) 47.826%, rgba(0, 0, 0, 0) 47.826%, rgba(0, 0, 0, 0) 52.174%, rgba(255, 254, 251, 0.5) 52.174%, rgba(255, 254, 251, 0.5) 73.913%, rgba(0, 0, 0, 0) 73.913%, rgba(0, 0, 0, 0) 78.261%, rgba(255, 254, 251, 0.5) 78.261%, rgba(255, 254, 251, 0.5) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-  background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 254, 251, 0.5) 0%, rgba(255, 254, 251, 0.5) 21.739%, rgba(0, 0, 0, 0) 21.739%, rgba(0, 0, 0, 0) 26.087%, rgba(255, 254, 251, 0.5) 26.087%, rgba(255, 254, 251, 0.5) 47.826%, rgba(0, 0, 0, 0) 47.826%, rgba(0, 0, 0, 0) 52.174%, rgba(255, 254, 251, 0.5) 52.174%, rgba(255, 254, 251, 0.5) 73.913%, rgba(0, 0, 0, 0) 73.913%, rgba(0, 0, 0, 0) 78.261%, rgba(255, 254, 251, 0.5) 78.261%, rgba(255, 254, 251, 0.5) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-  background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 254, 251, 0.5) 0%, rgba(255, 254, 251, 0.5) 21.739%, rgba(0, 0, 0, 0) 21.739%, rgba(0, 0, 0, 0) 26.087%, rgba(255, 254, 251, 0.5) 26.087%, rgba(255, 254, 251, 0.5) 47.826%, rgba(0, 0, 0, 0) 47.826%, rgba(0, 0, 0, 0) 52.174%, rgba(255, 254, 251, 0.5) 52.174%, rgba(255, 254, 251, 0.5) 73.913%, rgba(0, 0, 0, 0) 73.913%, rgba(0, 0, 0, 0) 78.261%, rgba(255, 254, 251, 0.5) 78.261%, rgba(255, 254, 251, 0.5) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-  background-position: left top;
   -webkit-background-origin: content;
   -moz-background-origin: content;
   -ms-background-origin: content-box;
@@ -135,34 +185,23 @@ a:hover, a:focus, a:active {
   -webkit-background-clip: content-box;
   -moz-background-clip: content-box;
   background-clip: content-box;
-  padding-top: 1.25em;
-  padding-bottom: 1.25em;
 }
-/* line 38, ../../../../../Sites/.venvs/aaron/rubygems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-.container:after, [role="banner"]:after,
+.container:after, [role="banner"] hgroup:after,
 [role="contentinfo"]:after {
   content: "";
   display: table;
   clear: both;
 }
 @media (min-width: 40em) {
-  /* line 4, ../sass/_layout.scss */
-  .container, [role="banner"],
+  .container, [role="banner"] hgroup,
   [role="contentinfo"] {
     *zoom: 1;
-    max-width: 59em;
-    _width: 59em;
+    max-width: 71em;
+    _width: 71em;
     margin-left: auto;
     margin-right: auto;
     padding-left: 1em;
     padding-right: 1em;
-    background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(0%, rgba(0, 0, 0, 0)), color-stop(0%, rgba(255, 254, 251, 0.5)), color-stop(8.475%, rgba(255, 254, 251, 0.5)), color-stop(8.475%, rgba(0, 0, 0, 0)), color-stop(10.169%, rgba(0, 0, 0, 0)), color-stop(10.169%, rgba(255, 254, 251, 0.5)), color-stop(18.644%, rgba(255, 254, 251, 0.5)), color-stop(18.644%, rgba(0, 0, 0, 0)), color-stop(20.339%, rgba(0, 0, 0, 0)), color-stop(20.339%, rgba(255, 254, 251, 0.5)), color-stop(28.814%, rgba(255, 254, 251, 0.5)), color-stop(28.814%, rgba(0, 0, 0, 0)), color-stop(30.508%, rgba(0, 0, 0, 0)), color-stop(30.508%, rgba(255, 254, 251, 0.5)), color-stop(38.983%, rgba(255, 254, 251, 0.5)), color-stop(38.983%, rgba(0, 0, 0, 0)), color-stop(40.678%, rgba(0, 0, 0, 0)), color-stop(40.678%, rgba(255, 254, 251, 0.5)), color-stop(49.153%, rgba(255, 254, 251, 0.5)), color-stop(49.153%, rgba(0, 0, 0, 0)), color-stop(50.847%, rgba(0, 0, 0, 0)), color-stop(50.847%, rgba(255, 254, 251, 0.5)), color-stop(59.322%, rgba(255, 254, 251, 0.5)), color-stop(59.322%, rgba(0, 0, 0, 0)), color-stop(61.017%, rgba(0, 0, 0, 0)), color-stop(61.017%, rgba(255, 254, 251, 0.5)), color-stop(69.492%, rgba(255, 254, 251, 0.5)), color-stop(69.492%, rgba(0, 0, 0, 0)), color-stop(71.186%, rgba(0, 0, 0, 0)), color-stop(71.186%, rgba(255, 254, 251, 0.5)), color-stop(79.661%, rgba(255, 254, 251, 0.5)), color-stop(79.661%, rgba(0, 0, 0, 0)), color-stop(81.356%, rgba(0, 0, 0, 0)), color-stop(81.356%, rgba(255, 254, 251, 0.5)), color-stop(89.831%, rgba(255, 254, 251, 0.5)), color-stop(89.831%, rgba(0, 0, 0, 0)), color-stop(91.525%, rgba(0, 0, 0, 0)), color-stop(91.525%, rgba(255, 254, 251, 0.5)), color-stop(100.0%, rgba(255, 254, 251, 0.5)), color-stop(100.0%, rgba(0, 0, 0, 0)), color-stop(100%, rgba(0, 0, 0, 0)));
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 254, 251, 0.5) 0%, rgba(255, 254, 251, 0.5) 8.475%, rgba(0, 0, 0, 0) 8.475%, rgba(0, 0, 0, 0) 10.169%, rgba(255, 254, 251, 0.5) 10.169%, rgba(255, 254, 251, 0.5) 18.644%, rgba(0, 0, 0, 0) 18.644%, rgba(0, 0, 0, 0) 20.339%, rgba(255, 254, 251, 0.5) 20.339%, rgba(255, 254, 251, 0.5) 28.814%, rgba(0, 0, 0, 0) 28.814%, rgba(0, 0, 0, 0) 30.508%, rgba(255, 254, 251, 0.5) 30.508%, rgba(255, 254, 251, 0.5) 38.983%, rgba(0, 0, 0, 0) 38.983%, rgba(0, 0, 0, 0) 40.678%, rgba(255, 254, 251, 0.5) 40.678%, rgba(255, 254, 251, 0.5) 49.153%, rgba(0, 0, 0, 0) 49.153%, rgba(0, 0, 0, 0) 50.847%, rgba(255, 254, 251, 0.5) 50.847%, rgba(255, 254, 251, 0.5) 59.322%, rgba(0, 0, 0, 0) 59.322%, rgba(0, 0, 0, 0) 61.017%, rgba(255, 254, 251, 0.5) 61.017%, rgba(255, 254, 251, 0.5) 69.492%, rgba(0, 0, 0, 0) 69.492%, rgba(0, 0, 0, 0) 71.186%, rgba(255, 254, 251, 0.5) 71.186%, rgba(255, 254, 251, 0.5) 79.661%, rgba(0, 0, 0, 0) 79.661%, rgba(0, 0, 0, 0) 81.356%, rgba(255, 254, 251, 0.5) 81.356%, rgba(255, 254, 251, 0.5) 89.831%, rgba(0, 0, 0, 0) 89.831%, rgba(0, 0, 0, 0) 91.525%, rgba(255, 254, 251, 0.5) 91.525%, rgba(255, 254, 251, 0.5) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 254, 251, 0.5) 0%, rgba(255, 254, 251, 0.5) 8.475%, rgba(0, 0, 0, 0) 8.475%, rgba(0, 0, 0, 0) 10.169%, rgba(255, 254, 251, 0.5) 10.169%, rgba(255, 254, 251, 0.5) 18.644%, rgba(0, 0, 0, 0) 18.644%, rgba(0, 0, 0, 0) 20.339%, rgba(255, 254, 251, 0.5) 20.339%, rgba(255, 254, 251, 0.5) 28.814%, rgba(0, 0, 0, 0) 28.814%, rgba(0, 0, 0, 0) 30.508%, rgba(255, 254, 251, 0.5) 30.508%, rgba(255, 254, 251, 0.5) 38.983%, rgba(0, 0, 0, 0) 38.983%, rgba(0, 0, 0, 0) 40.678%, rgba(255, 254, 251, 0.5) 40.678%, rgba(255, 254, 251, 0.5) 49.153%, rgba(0, 0, 0, 0) 49.153%, rgba(0, 0, 0, 0) 50.847%, rgba(255, 254, 251, 0.5) 50.847%, rgba(255, 254, 251, 0.5) 59.322%, rgba(0, 0, 0, 0) 59.322%, rgba(0, 0, 0, 0) 61.017%, rgba(255, 254, 251, 0.5) 61.017%, rgba(255, 254, 251, 0.5) 69.492%, rgba(0, 0, 0, 0) 69.492%, rgba(0, 0, 0, 0) 71.186%, rgba(255, 254, 251, 0.5) 71.186%, rgba(255, 254, 251, 0.5) 79.661%, rgba(0, 0, 0, 0) 79.661%, rgba(0, 0, 0, 0) 81.356%, rgba(255, 254, 251, 0.5) 81.356%, rgba(255, 254, 251, 0.5) 89.831%, rgba(0, 0, 0, 0) 89.831%, rgba(0, 0, 0, 0) 91.525%, rgba(255, 254, 251, 0.5) 91.525%, rgba(255, 254, 251, 0.5) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 254, 251, 0.5) 0%, rgba(255, 254, 251, 0.5) 8.475%, rgba(0, 0, 0, 0) 8.475%, rgba(0, 0, 0, 0) 10.169%, rgba(255, 254, 251, 0.5) 10.169%, rgba(255, 254, 251, 0.5) 18.644%, rgba(0, 0, 0, 0) 18.644%, rgba(0, 0, 0, 0) 20.339%, rgba(255, 254, 251, 0.5) 20.339%, rgba(255, 254, 251, 0.5) 28.814%, rgba(0, 0, 0, 0) 28.814%, rgba(0, 0, 0, 0) 30.508%, rgba(255, 254, 251, 0.5) 30.508%, rgba(255, 254, 251, 0.5) 38.983%, rgba(0, 0, 0, 0) 38.983%, rgba(0, 0, 0, 0) 40.678%, rgba(255, 254, 251, 0.5) 40.678%, rgba(255, 254, 251, 0.5) 49.153%, rgba(0, 0, 0, 0) 49.153%, rgba(0, 0, 0, 0) 50.847%, rgba(255, 254, 251, 0.5) 50.847%, rgba(255, 254, 251, 0.5) 59.322%, rgba(0, 0, 0, 0) 59.322%, rgba(0, 0, 0, 0) 61.017%, rgba(255, 254, 251, 0.5) 61.017%, rgba(255, 254, 251, 0.5) 69.492%, rgba(0, 0, 0, 0) 69.492%, rgba(0, 0, 0, 0) 71.186%, rgba(255, 254, 251, 0.5) 71.186%, rgba(255, 254, 251, 0.5) 79.661%, rgba(0, 0, 0, 0) 79.661%, rgba(0, 0, 0, 0) 81.356%, rgba(255, 254, 251, 0.5) 81.356%, rgba(255, 254, 251, 0.5) 89.831%, rgba(0, 0, 0, 0) 89.831%, rgba(0, 0, 0, 0) 91.525%, rgba(255, 254, 251, 0.5) 91.525%, rgba(255, 254, 251, 0.5) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 254, 251, 0.5) 0%, rgba(255, 254, 251, 0.5) 8.475%, rgba(0, 0, 0, 0) 8.475%, rgba(0, 0, 0, 0) 10.169%, rgba(255, 254, 251, 0.5) 10.169%, rgba(255, 254, 251, 0.5) 18.644%, rgba(0, 0, 0, 0) 18.644%, rgba(0, 0, 0, 0) 20.339%, rgba(255, 254, 251, 0.5) 20.339%, rgba(255, 254, 251, 0.5) 28.814%, rgba(0, 0, 0, 0) 28.814%, rgba(0, 0, 0, 0) 30.508%, rgba(255, 254, 251, 0.5) 30.508%, rgba(255, 254, 251, 0.5) 38.983%, rgba(0, 0, 0, 0) 38.983%, rgba(0, 0, 0, 0) 40.678%, rgba(255, 254, 251, 0.5) 40.678%, rgba(255, 254, 251, 0.5) 49.153%, rgba(0, 0, 0, 0) 49.153%, rgba(0, 0, 0, 0) 50.847%, rgba(255, 254, 251, 0.5) 50.847%, rgba(255, 254, 251, 0.5) 59.322%, rgba(0, 0, 0, 0) 59.322%, rgba(0, 0, 0, 0) 61.017%, rgba(255, 254, 251, 0.5) 61.017%, rgba(255, 254, 251, 0.5) 69.492%, rgba(0, 0, 0, 0) 69.492%, rgba(0, 0, 0, 0) 71.186%, rgba(255, 254, 251, 0.5) 71.186%, rgba(255, 254, 251, 0.5) 79.661%, rgba(0, 0, 0, 0) 79.661%, rgba(0, 0, 0, 0) 81.356%, rgba(255, 254, 251, 0.5) 81.356%, rgba(255, 254, 251, 0.5) 89.831%, rgba(0, 0, 0, 0) 89.831%, rgba(0, 0, 0, 0) 91.525%, rgba(255, 254, 251, 0.5) 91.525%, rgba(255, 254, 251, 0.5) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-    background-image: linear-gradient(left, rgba(0, 0, 0, 0) 0%, rgba(255, 254, 251, 0.5) 0%, rgba(255, 254, 251, 0.5) 8.475%, rgba(0, 0, 0, 0) 8.475%, rgba(0, 0, 0, 0) 10.169%, rgba(255, 254, 251, 0.5) 10.169%, rgba(255, 254, 251, 0.5) 18.644%, rgba(0, 0, 0, 0) 18.644%, rgba(0, 0, 0, 0) 20.339%, rgba(255, 254, 251, 0.5) 20.339%, rgba(255, 254, 251, 0.5) 28.814%, rgba(0, 0, 0, 0) 28.814%, rgba(0, 0, 0, 0) 30.508%, rgba(255, 254, 251, 0.5) 30.508%, rgba(255, 254, 251, 0.5) 38.983%, rgba(0, 0, 0, 0) 38.983%, rgba(0, 0, 0, 0) 40.678%, rgba(255, 254, 251, 0.5) 40.678%, rgba(255, 254, 251, 0.5) 49.153%, rgba(0, 0, 0, 0) 49.153%, rgba(0, 0, 0, 0) 50.847%, rgba(255, 254, 251, 0.5) 50.847%, rgba(255, 254, 251, 0.5) 59.322%, rgba(0, 0, 0, 0) 59.322%, rgba(0, 0, 0, 0) 61.017%, rgba(255, 254, 251, 0.5) 61.017%, rgba(255, 254, 251, 0.5) 69.492%, rgba(0, 0, 0, 0) 69.492%, rgba(0, 0, 0, 0) 71.186%, rgba(255, 254, 251, 0.5) 71.186%, rgba(255, 254, 251, 0.5) 79.661%, rgba(0, 0, 0, 0) 79.661%, rgba(0, 0, 0, 0) 81.356%, rgba(255, 254, 251, 0.5) 81.356%, rgba(255, 254, 251, 0.5) 89.831%, rgba(0, 0, 0, 0) 89.831%, rgba(0, 0, 0, 0) 91.525%, rgba(255, 254, 251, 0.5) 91.525%, rgba(255, 254, 251, 0.5) 100.0%, rgba(0, 0, 0, 0) 100.0%, rgba(0, 0, 0, 0) 100%);
-    background-position: left top;
     -webkit-background-origin: content;
     -moz-background-origin: content;
     -ms-background-origin: content-box;
@@ -172,8 +211,7 @@ a:hover, a:focus, a:active {
     -moz-background-clip: content-box;
     background-clip: content-box;
   }
-  /* line 38, ../../../../../Sites/.venvs/aaron/rubygems/gems/compass-0.13.alpha.0/frameworks/compass/stylesheets/compass/utilities/general/_clearfix.scss */
-  .container:after, [role="banner"]:after,
+  .container:after, [role="banner"] hgroup:after,
   [role="contentinfo"]:after {
     content: "";
     display: table;
@@ -181,67 +219,95 @@ a:hover, a:focus, a:active {
   }
 }
 
+[role="banner"] hgroup,
+[role="contentinfo"] {
+  clear: both;
+}
+
+[role="main"] {
+  margin-bottom: 2.5em;
+}
 @media (min-width: 40em) {
-  /* line 21, ../sass/_layout.scss */
   [role="main"] {
-    width: 69.492%;
+    width: 74.648%;
     float: left;
-    margin-right: 1.695%;
+    margin-right: 1.408%;
     display: inline;
   }
 }
-/* line 79, ../../../../../Sites/.venvs/aaron/rubygems/gems/susy-1.0.rc.1/sass/susy/_media.scss */
 .lt-ie9 [role="main"] {
-  width: 69.492%;
+  width: 74.648%;
   float: left;
-  margin-right: 1.695%;
+  margin-right: 1.408%;
   display: inline;
 }
 
 @media (min-width: 40em) {
-  /* line 27, ../sass/_layout.scss */
   [role="navigation"] {
-    width: 28.814%;
+    width: 23.944%;
     float: right;
     margin-right: 0;
     #margin-left: -1em;
     display: inline;
+    margin-bottom: 2.5em;
   }
 }
-/* line 79, ../../../../../Sites/.venvs/aaron/rubygems/gems/susy-1.0.rc.1/sass/susy/_media.scss */
 .lt-ie9 [role="navigation"] {
-  width: 28.814%;
+  width: 23.944%;
   float: right;
   margin-right: 0;
   #margin-left: -1em;
   display: inline;
+  margin-bottom: 2.5em;
 }
 
-/* line 8, ../sass/_modules/_banner.scss */
-h1 {
-  font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
-  font-size: 1.938em;
-  line-height: 1.29em;
+[role="banner"] {
+  -webkit-transform: rotate(-3deg);
+  -moz-transform: rotate(-3deg);
+  -ms-transform: rotate(-3deg);
+  -o-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  margin: -3.75em -3.75em 3.75em;
+  padding: 5em 3.75em 1.25em;
+  background: #dc322f url('../img/burst.png?1337937138') no-repeat scroll bottom left;
+  color: #fdf6e3;
   font-weight: bold;
   text-transform: uppercase;
-  letter-spacing: .01em;
+}
+[role="banner"] hgroup {
+  -webkit-transform: rotate(3deg);
+  -moz-transform: rotate(3deg);
+  -ms-transform: rotate(3deg);
+  -o-transform: rotate(3deg);
+  transform: rotate(3deg);
+}
+
+h1 {
+  font-size: 1.938em;
+  line-height: 1.29em;
 }
 @media (min-width: 40em) {
-  /* line 8, ../sass/_modules/_banner.scss */
   h1 {
     font-size: 2.438em;
     line-height: 1.282em;
   }
 }
-/* line 79, ../../../../../Sites/.venvs/aaron/rubygems/gems/susy-1.0.rc.1/sass/susy/_media.scss */
 .lt-ie9 h1 {
   font-size: 2.438em;
   line-height: 1.282em;
 }
-@media (min-width: 61em) {
-  /* line 8, ../sass/_modules/_banner.scss */
+@media (min-width: 49em) {
   h1 {
     font-size: 5.938em;
     line-height: 1.053em;
   }
+}
+
+[role="contentinfo"] {
+  color: #93a1a1;
+  text-transform: uppercase;
+}
+[role="contentinfo"] b {
+  color: #657b83;
+  font-weight: bold;
 }

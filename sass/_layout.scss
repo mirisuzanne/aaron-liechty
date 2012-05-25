@@ -2,10 +2,9 @@
 // Layout
 
 .container {
+  @include clearfix;
   @include container;
   @include susy-grid-background;
-  @include padding-leader;
-  @include padding-trailer;
 
   @include at-breakpoint($break) {
     @include container;
@@ -13,19 +12,22 @@
   }
 }
 
-[role="banner"], 
+[role="banner"] hgroup,
 [role="contentinfo"] {
   @extend .container;
+  clear: both;
 }
 
 [role="main"] {
+  @include trailer(2);
   @include at-breakpoint($break) {
-    @include span-columns(7,10);
+    @include span-columns(9,12);
   }
 }
 
 [role="navigation"] {
   @include at-breakpoint($break) {
-    @include span-columns(3 omega,10);
+    @include span-columns(3 omega,12);
+    @include trailer(2);
   }
 }

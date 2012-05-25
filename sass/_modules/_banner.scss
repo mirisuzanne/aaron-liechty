@@ -2,21 +2,26 @@
 // Site Banner
 
 [role="banner"] {
-
+  @include rotate(-3deg);
+  margin: rhythm(-3) rhythm(-3) rhythm(3);
+  padding: rhythm(4) rhythm(3) rhythm(1);
+  background: $red image-url('burst.png') no-repeat scroll bottom left;
+  color: $base3;
+  font-weight: bold;
+  text-transform: uppercase;
+  hgroup {
+    @include rotate(3deg);
+  }
 }
 
 h1 {
-  @include sans;
   @include adjust-font-size-to($largepx);
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: .01em;
 
   @include at-breakpoint($break) {
     @include adjust-font-size-to($xlargepx);
   }
 
-  @include at-breakpoint($lay) {
+  @include at-breakpoint(8) {
     @include adjust-font-size-to($xxlargepx);
   }
 }

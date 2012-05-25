@@ -2,5 +2,10 @@
 // Site Banner
 
 [role="contentinfo"] {
-
+  color: $base1;
+  text-transform: uppercase;
+  b {
+    color: $base00;
+    font-weight: bold; 
+  }
 }

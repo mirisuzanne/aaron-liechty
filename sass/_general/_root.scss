@@ -16,8 +16,13 @@ $focus  : '&:hover, &:focus, &:active';
 @include establish-baseline;
 html { 
   @include text-shadow(rgba(white,.5) 0 1px 0);
+  @include cond;
   background: $base3;
   color: $base;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 a {

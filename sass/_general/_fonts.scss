@@ -2,15 +2,16 @@
 // Imports
 
 @import "font-license";
+@import "franklin-gothic";
 
 //-----------------------------------------------------------------------------
 // Settings
 
-$sans-stack   : 'Helvetica Neue', Arial, Helvetica, sans-serif;
 $serif-stack  : Georgia, serif;
 
 //-----------------------------------------------------------------------------
 // Mixins
 
-@mixin serif { font-family: $font-stack; }
+@mixin serif { font-family: $serif-stack; }
 @mixin sans { font-family: $sans-stack; }
+@mixin cond { font-family: $cond-stack; }
