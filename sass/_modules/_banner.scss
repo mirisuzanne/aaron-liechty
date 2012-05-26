@@ -5,7 +5,7 @@
   @include rotate(-3deg);
   margin: rhythm(-3) rhythm(-3) rhythm(3);
   padding: rhythm(4) rhythm(3) rhythm(1);
-  background: $red image-url('burst.png') no-repeat scroll bottom left;
+  background: $red image-url('burst.png') no-repeat scroll center;
   color: $base3;
   font-weight: bold;
   text-transform: uppercase;
