@@ -486,8 +486,8 @@ h1 {
 }
 
 [role="main"] {
-  padding-bottom: 7.5em;
-  background: url('../img/city-dark.png?1338526366') repeat-x scroll bottom left;
+  padding-bottom: 15em;
+  background: url('../img/city-dark2.png?1338529404') repeat-x scroll -25% bottom;
 }
 
 .pagination {

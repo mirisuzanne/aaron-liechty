@@ -2,8 +2,8 @@
 // Main Content
 
 [role="main"] {
-  @include padding-trailer(6);
-  background: image-url('city-dark.png') repeat-x scroll bottom left;
+  @include padding-trailer(12);
+  background: image-url('city-dark2.png') repeat-x scroll -25% bottom;
 }
 
 .pagination {
