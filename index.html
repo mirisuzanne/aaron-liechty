@@ -41,28 +41,109 @@
   
   <header class="vcard" role="banner">
     <hgroup>
-      <h1 class="fn">Aaron Liechty</h1>
+      <h1 class="fn"><a href="/" rel="home">Aaron Liechty</a></h1>
       <h2 class="title">Illustrator</h2>
     </hgroup>
   </header>
 
-  <div class="container">
-    <nav role="navigation">
+  <div role="main">
+  <div>
+
+    <!-- {block:PermalinkPagination} -->
+    <nav class="pagination">
       <ul>
-        <li><a href="#">tag1</a></li>
-        <li><a href="#">tag2</a></li>
-        <li><a href="#">tag3</a></li>
+        <!-- {block:PreviousPost} -->
+        <li class="prev">
+          <a href="{PreviousPost}">previous</a>
+        </li>
+        <!-- {/block:PreviousPost} -->
+        <!-- {block:NextPost} -->
+        <li class="next">
+          <a href="{NextPost}">next</a>
+        </li>
+        <!-- {/block:NextPost} -->
       </ul>
     </nav>
-  
-    <article role="main">
-      <p>Content.</p>
+    <!-- {/block:PermalinkPagination} -->
+
+    <!-- single -->
+    <article class="post">
+
+      <figure class="img">
+        <img src="img/mockup/at_buddy3.jpg">
+      </figure>
+
+      <div class="body">
+        <h2>Lorem Ipsum etc.</h2>
+        <h3>Lorem Ipsum etc.</h3>
+        <h4>Lorem Ipsum etc.</h4>
+        <p>Lorem Ipsum etc.</p>
+        <ul>
+          <li>some</li>
+          <li>thing</li>
+          <li>else</li>
+        </ul>
+        <ol>
+          <li>some</li>
+          <li>thing</li>
+          <li>else</li>
+        </ol>
+        <blockquote>something else</blockquote>
+      </div>
+
+      <footer class="info"> 
+        <!-- {block:IndexPage} -->
+        <a href="{Permalink}" class="permalink">permalink</a>
+        <!-- {/block:IndexPage} -->
+       
+        <!-- {block:Date} -->
+        <time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}" pubdate>
+          {ShortMonth} {DayOfMonth}, {Year}
+        </time>
+        <!-- {/block:Date} -->
+
+        <!-- {block:HasTags} -->
+        <ul class="tags">
+          <!-- {block:Tags} -->
+          <li><a href="{TagURL}" rel="tag">{Tag}</a></li>
+          <li><a href="{TagURL}" rel="tag">{Tag}</a></li>
+          <li><a href="{TagURL}" rel="tag">{Tag}</a></li>
+          <li><a href="{TagURL}" rel="tag">{Tag}</a></li>
+          <!-- {/block:Tags} -->
+        </ul>
+        <!-- {/block:HasTags} -->
+      </footer>
+
     </article>
+    <!-- /single -->
+  </div>
   </div>
 
-  <footer role="contentinfo">
-    <p class="license">copyright &copy; 2012 <b>Aaron Liechty</b> <i>all rights reserved</i></p>
-  </footer>
+  <div class="meta">
+    <nav role="navigation">
+      <ul>
+        <li><a href="#" rel="tag">tag1</a></li>
+        <li><a href="#" rel="tag">tag2</a></li>
+        <li><a href="#" rel="tag">tag3</a></li>
+        <li><a href="#" rel="tag">tag1</a></li>
+        <li><a href="#" rel="tag">tag2</a></li>
+        <li><a href="#" rel="tag">tag3</a></li>
+        <li><a href="#" rel="tag">tag1</a></li>
+        <li><a href="#" rel="tag">tag2</a></li>
+        <li><a href="#" rel="tag">tag3</a></li>
+        <li><a href="#" rel="tag">tag1</a></li>
+        <li><a href="#" rel="tag">tag2</a></li>
+        <li><a href="#" rel="tag">tag3</a></li>
+        <li><a href="#" rel="tag">tag1</a></li>
+        <li><a href="#" rel="tag">tag2</a></li>
+        <li><a href="#" rel="tag">tag3</a></li>
+      </ul>
+    </nav>
+
+    <footer role="contentinfo">
+      <p class="license">copyright &copy; 2012 <b>Aaron Liechty</b> <i>all rights reserved</i></p>
+    </footer>
+  </div>
 
   <!-- JavaScript at the bottom for fast page loading: http://developer.yahoo.com/performance/rules.html#js_bottom -->
 

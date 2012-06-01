@@ -10,18 +10,24 @@
 $link   : '&:link, &:visited';
 $focus  : '&:hover, &:focus, &:active';
 
+$theme  : light;
+$back   : if($theme == light, $base3, $base03);
+$more   : if($theme == light, white, black);
+$amore  : if($theme == light, black, white);;
+$anti   : if($theme == light, $base03, $base3);
+
 //-----------------------------------------------------------------------------
 // Root
 
 @include establish-baseline;
 html { 
-  @include text-shadow(rgba(white,.5) 0 1px 0);
+  @include text-shadow(rgba($more,.5) 0 1px 0);
   @include cond;
-  background: $base3;
+  background: $back;
   color: $base;
 }
 
-body {
+html, body {
   overflow-x: hidden;
 }
 
@@ -34,3 +40,10 @@ a {
     color: $accent;
   }
 }
+
+img {
+  @include box-sizing(border-box);
+  max-width: 100%;
+  border: 3px solid $base;
+}
+

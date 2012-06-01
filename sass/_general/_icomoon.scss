@@ -1,0 +1,58 @@
+/*
+Icon Set: IcoMoon (limited)
+License:  CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
+
+
+Icon Set: Entypo
+License:  CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
+*/
+
+@font-face {
+  font-family: 'IcoMoon';
+  src: font-url('IcoMoon.eot');
+  src: font-url('IcoMoon.eot?#iefix') format('embedded-opentype'),
+    font-url('IcoMoon.svg#IcoMoon') format('svg'),
+    font-url('IcoMoon.woff') format('woff'),
+    font-url('IcoMoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'IcoMoon';
+  content: attr(data-icon);
+  speak: none;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+%icon:before {
+  font-family: 'IcoMoon';
+  font-style: normal;
+  speak: none;
+}
+
+%no-text-icon {
+  display: inline-block;
+  text-indent: -9999px;
+  position: relative;
+  min-width: 1em;
+  &:before {
+    position: absolute;
+    left: 0;
+    text-indent: 0;
+  }
+}
+
+%icon-arrow-left:before {
+  content: "\2190";
+}
+%icon-arrow-right:before {
+  content: "\2192";
+}
+%icon-tag:before {
+  content: "\2617";
+}
+%icon-bookmark:before {
+  content: "\25ae";
+}

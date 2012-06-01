@@ -8,17 +8,16 @@
 //-----------------------------------------------------------------------------
 // Grid Settings
 
-$total-columns: 4;
-$column-width: 5em;
+$total-columns: 6;
+$column-width: 4em;
 $gutter-width: 1em;
 $grid-padding: $gutter-width;
 
 $show-grid-backgrounds: false;
 
-$min    : 40em;
 $lay    : 12;
 $ie     : lt-ie9;
-$break  : $min $lay $ie;
+$break  : $lay $ie;
 
 //-----------------------------------------------------------------------------
 // Other Settings

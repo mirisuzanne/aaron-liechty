@@ -1,16 +1,53 @@
 //-----------------------------------------------------------------------------
 // Site Banner
 
+$bg-top-start: image-width('city-dark.png')/2 bottom;
+$bg-top-end: center bottom;
+$bg-top: image-url('city-dark.png') repeat-x scroll $bg-top-end;
+$bg-bottom-start: center rhythm(-12);
+$bg-bottom-end: center rhythm(-4);
+$bg-bottom: $red image-url('burst-big.png') no-repeat scroll $bg-bottom-end;
+
+@include keyframes(sunrise) {
+  0% {
+    background-color: $anti; 
+    background-position: $bg-top-start, $bg-bottom-start; 
+  }
+  100% {
+    background-color: $red;
+    background-position: $bg-top-end, $bg-bottom-end; 
+  }
+}
+
 [role="banner"] {
+  @include animation(sunrise 12s 1s ease both);
+  @include text-shadow(rgba($base03,.25) 1px 1px 1px);
   @include rotate(-3deg);
-  margin: rhythm(-3) rhythm(-3) rhythm(3);
+  margin: rhythm(-3) rhythm(-3) rhythm(1);
   padding: rhythm(4) rhythm(3) rhythm(1);
-  background: $red image-url('burst.png') no-repeat scroll center;
+  background: $bg-bottom;
+  background: $bg-top, $bg-bottom;
   color: $base3;
   font-weight: bold;
   text-transform: uppercase;
   hgroup {
     @include rotate(3deg);
+  }
+  a {
+    #{$link} { 
+      @include transition(all 300ms);
+      @include transform-origin(0,0);
+      display: block;
+      color: $base3; 
+    }
+    #{$focus} { 
+      @include text-shadow(rgba($base03,.5) 1px 1px .25em);
+      @include transform(scale(1.125));
+    }
+  }
+  @include at-breakpoint($break) { 
+    @include padding-trailer(2.5);
+    @include trailer(2); 
   }
 }
 
@@ -18,10 +55,6 @@ h1 {
   @include adjust-font-size-to($largepx);
 
   @include at-breakpoint($break) {
-    @include adjust-font-size-to($xlargepx);
-  }
-
-  @include at-breakpoint(8) {
     @include adjust-font-size-to($xxlargepx);
   }
 }

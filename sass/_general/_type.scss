@@ -3,4 +3,29 @@
 
 %type {
   @include sans;
+
+  h2, h3, h4 { font-weight: bold; }
+  h2 { @include adjust-font-size-to($largepx); }
+  h3 { text-transform: uppercase; }
+  
+  ul, ol, p, blockquote { @include trailer; }
+  ul, ol { padding-left: rhythm(1.5); }
+  ul { list-style: disc; }
+  ol { list-style: decimal; }
+  blockquote { 
+    @include apply-side-rhythm-border(left,3px,1); 
+    color: $base1;
+  }
+
+  strong { font-weight: bold; }
+  em { font-style: italic; }
+}
+
+[rel="tag"] {
+  @extend %icon;
+  @extend %icon-tag;
+  &:before { 
+    margin-right: .4em; 
+    vertical-align: middle;
+  }
 }

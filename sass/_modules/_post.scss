@@ -1,0 +1,37 @@
+//-----------------------------------------------------------------------------
+// Single Post
+
+.post {
+  @include pie-clearfix;
+}
+
+.body, .info {
+  @include at-breakpoint($break) {
+    @include span-columns(4 omega, 12);
+  }
+}
+
+.img {
+  text-align: right;
+  @include at-breakpoint($break) {
+    @include span-columns(8, 12);
+  }
+}
+
+.body {
+  @extend %type;
+  @include trailer;
+}
+
+.info {
+  @include adjust-font-size-to($smallpx);
+  @include trailer(1,$smallpx);
+  color: $base1;
+  text-transform: uppercase;
+}
+
+.permalink {
+  @extend %icon;
+  @extend %icon-bookmark;
+  @extend %no-text-icon;
+}

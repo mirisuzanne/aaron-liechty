@@ -1,0 +1,35 @@
+// ---------------------------------------------------------------------------
+// Main Content
+
+[role="main"] {
+  @include padding-trailer(6);
+  background: image-url('city-dark.png') repeat-x scroll bottom left;
+}
+
+.pagination {
+  @include pie-clearfix;
+  @include adjust-font-size-to($xlargepx);
+  @include at-breakpoint($break) {
+    @include suffix(4,12);
+  }
+  a {
+    @extend %icon;
+    @extend %no-text-icon;
+    #{$link} {
+      @include transition(all 150ms);
+    }
+    #{$focus} {
+      @include text-shadow($anti 0 1px 0);
+      @include scale(2);
+    }
+  }
+  .prev a { @extend %icon-arrow-left; }
+  .next a { @extend %icon-arrow-right; }
+  li {
+    float: left;
+    width: 1em;
+    + li {
+      float: right;
+    }
+  }
+}

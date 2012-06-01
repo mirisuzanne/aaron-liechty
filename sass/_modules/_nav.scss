@@ -2,5 +2,12 @@
 // Site Nav
 
 [role="navigation"] {
-
+  @include h-borders(3px,1);
+  @include leader;
+  @include trailer;
+  border-color: $alt;
+  @include at-breakpoint($break) {
+    @include column-width($column-width*2 + $gutter-width);
+    @include column-gap($gutter-width);
+  }
 }
