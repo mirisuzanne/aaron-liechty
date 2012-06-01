@@ -3,7 +3,6 @@
 
 [role="navigation"] {
   @include h-borders(3px,1);
-  @include leader;
   @include trailer;
   border-color: $alt;
   @include at-breakpoint($break) {

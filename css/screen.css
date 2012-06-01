@@ -538,7 +538,6 @@ h1 {
   border-bottom-style: solid;
   border-bottom-width: 0.188em;
   padding-bottom: 1.063em;
-  margin-top: 1.25em;
   margin-bottom: 1.25em;
   border-color: #b58900;
 }
@@ -566,7 +565,6 @@ h1 {
 }
 
 .meta {
-  padding-top: 1.25em;
   padding-bottom: 1.25em;
   text-shadow: rgba(0, 0, 0, 0.5) 0 1px 0;
   background: #002b36;

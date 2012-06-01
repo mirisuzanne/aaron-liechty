@@ -2,7 +2,6 @@
 // Site Footer
 
 .meta {
-  @include padding-leader;
   @include padding-trailer;
   @include text-shadow(rgba($amore,.5) 0 1px 0);
   background: $anti;
