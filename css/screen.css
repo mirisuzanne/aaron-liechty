@@ -166,29 +166,29 @@ License:  CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
 }
 
 /* Use the following CSS code if you want to have a class per icon */
-[rel="tag"]:before, .pagination a:before, .permalink:before {
+[rel="tag"]:before, .post-pagination a:before, .permalink:before {
   font-family: 'IcoMoon';
   font-style: normal;
   speak: none;
 }
 
-.pagination a, .permalink {
+.post-pagination a, .permalink {
   display: inline-block;
   text-indent: -9999px;
   position: relative;
   min-width: 1em;
 }
-.pagination a:before, .permalink:before {
+.post-pagination a:before, .permalink:before {
   position: absolute;
   left: 0;
   text-indent: 0;
 }
 
-.pagination .prev a:before {
+.post-pagination .prev a:before {
   content: "\2190";
 }
 
-.pagination .next a:before {
+.post-pagination .next a:before {
   content: "\2192";
 }
 
@@ -490,32 +490,32 @@ h1 {
   background: url('../img/city-dark2.png?1338529404') repeat-x scroll -25% bottom;
 }
 
-.pagination {
+.post-pagination {
   *zoom: 1;
   font-size: 2.438em;
   line-height: 1.282em;
 }
-.pagination:after {
+.post-pagination:after {
   content: "";
   display: table;
   clear: both;
 }
 @media (min-width: 61em) {
-  .pagination {
+  .post-pagination {
     padding-right: 33.898%;
   }
 }
-.lt-ie9 .pagination {
+.lt-ie9 .post-pagination {
   padding-right: 33.898%;
 }
-.pagination a:link, .pagination a:visited {
+.post-pagination a:link, .post-pagination a:visited {
   -webkit-transition: all 150ms;
   -moz-transition: all 150ms;
   -ms-transition: all 150ms;
   -o-transition: all 150ms;
   transition: all 150ms;
 }
-.pagination a:hover, .pagination a:focus, .pagination a:active {
+.post-pagination a:hover, .post-pagination a:focus, .post-pagination a:active {
   text-shadow: #002b36 0 1px 0;
   -webkit-transform: scale(2, 2);
   -moz-transform: scale(2, 2);
@@ -523,11 +523,11 @@ h1 {
   -o-transform: scale(2, 2);
   transform: scale(2, 2);
 }
-.pagination li {
+.post-pagination li {
   float: left;
   width: 1em;
 }
-.pagination li + li {
+.post-pagination li + li {
   float: right;
 }
 

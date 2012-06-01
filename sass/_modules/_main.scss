@@ -6,7 +6,7 @@
   background: image-url('city-dark2.png') repeat-x scroll -25% bottom;
 }
 
-.pagination {
+.post-pagination {
   @include pie-clearfix;
   @include adjust-font-size-to($xlargepx);
   @include at-breakpoint($break) {
