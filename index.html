@@ -12,8 +12,18 @@
     http://dl.dropbox.com/u/1117930/sites/aaron/
   -->
 
-  <title>Aaron Liechty</title>
-  <meta name="description" content="The illustration portfolio of Aaron Liechty.">
+  <title>
+    {Title}
+    <!-- {block:DayPage}: {Month} {DayOfMonth}, {Year}{/block:DayPage}
+    {block:TagPage}: {Tag}{/block:TagPage}
+    {block:PostTitle}: {PostTitle}{/block:PostTitle} -->
+  </title>
+  <!-- {block:Description} -->
+  <meta name="description" content="{MetaDescription}" />
+  <!-- {/block:Description} -->
+
+  <!-- Syndication -->
+  <link rel="alternate" type="application/rss+xml" href="{RSS}" title="RSS feed: {Title}">
 
   <!--Mobile -->
   <meta name="viewport" content="width=device-width">
@@ -120,26 +130,6 @@
   </div>
 
   <div class="meta">
-    <nav role="navigation">
-      <ul>
-        <li><a href="#" rel="tag">tag1</a></li>
-        <li><a href="#" rel="tag">tag2</a></li>
-        <li><a href="#" rel="tag">tag3</a></li>
-        <li><a href="#" rel="tag">tag1</a></li>
-        <li><a href="#" rel="tag">tag2</a></li>
-        <li><a href="#" rel="tag">tag3</a></li>
-        <li><a href="#" rel="tag">tag1</a></li>
-        <li><a href="#" rel="tag">tag2</a></li>
-        <li><a href="#" rel="tag">tag3</a></li>
-        <li><a href="#" rel="tag">tag1</a></li>
-        <li><a href="#" rel="tag">tag2</a></li>
-        <li><a href="#" rel="tag">tag3</a></li>
-        <li><a href="#" rel="tag">tag1</a></li>
-        <li><a href="#" rel="tag">tag2</a></li>
-        <li><a href="#" rel="tag">tag3</a></li>
-      </ul>
-    </nav>
-
     <footer role="contentinfo">
       <p class="license">copyright &copy; 2012 <b>Aaron Liechty</b> <i>all rights reserved</i></p>
     </footer>
