@@ -166,29 +166,29 @@ License:  CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
 }
 
 /* Use the following CSS code if you want to have a class per icon */
-[rel="tag"]:before, .post-pagination a:before, .permalink:before {
+[rel="tag"]:before, .pagination a:before, .permalink:before {
   font-family: 'IcoMoon';
   font-style: normal;
   speak: none;
 }
 
-.post-pagination a, .permalink {
+.pagination a, .permalink {
   display: inline-block;
   text-indent: -9999px;
   position: relative;
   min-width: 1em;
 }
-.post-pagination a:before, .permalink:before {
+.pagination a:before, .permalink:before {
   position: absolute;
   left: 0;
   text-indent: 0;
 }
 
-.post-pagination .prev a:before {
+.pagination .prev a:before {
   content: "\2190";
 }
 
-.post-pagination .next a:before {
+.pagination .next a:before {
   content: "\2192";
 }
 
@@ -486,36 +486,36 @@ h1 {
 }
 
 [role="main"] {
-  padding-bottom: 15em;
+  padding-bottom: 12.5em;
   background: url('../img/city-dark2.png?1338529404') repeat-x scroll -25% bottom;
 }
 
-.post-pagination {
+.pagination {
   *zoom: 1;
   font-size: 2.438em;
   line-height: 1.282em;
 }
-.post-pagination:after {
+.pagination:after {
   content: "";
   display: table;
   clear: both;
 }
 @media (min-width: 61em) {
-  .post-pagination {
+  .pagination {
     padding-right: 33.898%;
   }
 }
-.lt-ie9 .post-pagination {
+.lt-ie9 .pagination {
   padding-right: 33.898%;
 }
-.post-pagination a:link, .post-pagination a:visited {
+.pagination a:link, .pagination a:visited {
   -webkit-transition: all 150ms;
   -moz-transition: all 150ms;
   -ms-transition: all 150ms;
   -o-transition: all 150ms;
   transition: all 150ms;
 }
-.post-pagination a:hover, .post-pagination a:focus, .post-pagination a:active {
+.pagination a:hover, .pagination a:focus, .pagination a:active {
   text-shadow: #002b36 0 1px 0;
   -webkit-transform: scale(2, 2);
   -moz-transform: scale(2, 2);
@@ -523,11 +523,11 @@ h1 {
   -o-transform: scale(2, 2);
   transform: scale(2, 2);
 }
-.post-pagination li {
+.pagination li {
   float: left;
   width: 1em;
 }
-.post-pagination li + li {
+.pagination li + li {
   float: right;
 }
 
@@ -582,11 +582,21 @@ h1 {
 
 .post {
   *zoom: 1;
+  border-bottom-style: solid;
+  border-bottom-width: 0.188em;
+  padding-bottom: 1.063em;
+  margin-bottom: 1.25em;
+  border-color: #eee8d5;
 }
 .post:after {
   content: "";
   display: table;
   clear: both;
+}
+.post:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 @media (min-width: 61em) {

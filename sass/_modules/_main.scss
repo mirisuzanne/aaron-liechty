@@ -2,11 +2,11 @@
 // Main Content
 
 [role="main"] {
-  @include padding-trailer(12);
+  @include padding-trailer(10);
   background: image-url('city-dark2.png') repeat-x scroll -25% bottom;
 }
 
-.post-pagination {
+.pagination {
   @include pie-clearfix;
   @include adjust-font-size-to($xlargepx);
   @include at-breakpoint($break) {
