@@ -9,10 +9,10 @@ GEM
     fssm (0.2.9)
     modular-scale (0.0.5)
       compass (>= 0.11.5)
-    sass (3.2.0.alpha.237)
-    susy (1.0.rc.1)
-      compass (>= 0.12.2.rc.0)
-      sass (>= 3.2.0.alpha.237)
+    sass (3.2.0.alpha.275)
+    susy (1.0.rc.3)
+      compass (>= 0.12.2)
+      sass (>= 3.2.0.alpha.247)
 
 PLATFORMS
   ruby
@@ -20,5 +20,5 @@ PLATFORMS
 DEPENDENCIES
   compass (~> 0.13.alpha.0)
   modular-scale (~> 0.0.5)
-  sass (~> 3.2.0.alpha.237)
-  susy (~> 1.0.rc.1)
+  sass (~> 3.2.0.alpha.257)
+  susy (~> 1.0.rc.3)
