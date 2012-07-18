@@ -231,6 +231,9 @@ img {
   max-width: 100%;
   border: 3px solid #586e75;
 }
+a img {
+  border: 3px solid #b58900;
+}
 
 .body {
   font-family: "FranklinGothicFSBook", "Helvetica Neue", Arial, Helvetica, sans-serif;
@@ -488,6 +491,14 @@ h1 {
 [role="main"] {
   padding-bottom: 12.5em;
   background: url('../img/city-dark2.png?1338529404') repeat-x scroll -25% bottom;
+}
+@media (min-width: 61em) {
+  [role="main"] {
+    padding-bottom: 15em;
+  }
+}
+.lt-ie9 [role="main"] {
+  padding-bottom: 15em;
 }
 
 .pagination {

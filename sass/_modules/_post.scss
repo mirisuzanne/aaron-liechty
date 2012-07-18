@@ -6,7 +6,7 @@
   @include trailing-border(3px,1);
   @include trailer;
   border-color: $base2;
-  &:last-child { 
+  &:last-child {
     border-bottom: 0;
     padding-bottom: 0;
     margin-bottom: 0;

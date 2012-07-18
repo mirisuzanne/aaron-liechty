@@ -20,7 +20,7 @@ $anti   : if($theme == light, $base03, $base3);
 // Root
 
 @include establish-baseline;
-html { 
+html {
   @include text-shadow(rgba($more,.5) 0 1px 0);
   @include cond;
   background: $back;
@@ -45,5 +45,8 @@ img {
   @include box-sizing(border-box);
   max-width: 100%;
   border: 3px solid $base;
+  a & {
+    border: 3px solid $alt;
+  }
 }
 

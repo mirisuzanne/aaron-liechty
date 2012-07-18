@@ -4,6 +4,7 @@
 [role="main"] {
   @include padding-trailer(10);
   background: image-url('city-dark2.png') repeat-x scroll -25% bottom;
+  @include at-breakpoint($break) { @include padding-trailer(12); }
 }
 
 .pagination {
