@@ -7,12 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-  <!-- 
-    File Location:
-    http://dl.dropbox.com/u/1117930/sites/aaron/
-  -->
-
-  <title>
+http://dl.dropbox.com/u/1117930/sites/aaron/  <title>
     {Title}
     {block:DayPage}: {Month} {DayOfMonth}, {Year}{/block:DayPage}
     {block:TagPage}: {Tag}{/block:TagPage}
@@ -33,22 +28,17 @@
   <link rel="profile" href="http://microformats.org/profile/specs/" />
 
   <!-- favicon.ico -->
-  <link rel="shortcut icon" href="img/favicons/favicon.ico" />
-  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/favicons/apple-touch-icon-114x114-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/favicons/apple-touch-icon-72x72-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" sizes="57x57" href="img/favicons/apple-touch-icon-57x57-precomposed.png">
-  <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
-  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+  <link rel="shortcut icon" href="http://dl.dropbox.com/u/1117930/sites/aaron/img/favicons/favicon.ico" />
 
   <!-- styles -->
-  <link rel="stylesheet" href="css/screen.css">
+  <link rel="stylesheet" href="http://dl.dropbox.com/u/1117930/sites/aaron/css/screen.css">
 
   <!-- modernizr -->
-  <script src="js/vendor/modernizr-2.5.3.min.js"></script>
-  <script src="js/modernizr.selectors.js"></script>
+  <script src="http://dl.dropbox.com/u/1117930/sites/aaron/js/vendor/modernizr-2.5.3.min.js"></script>
+  <script src="http://dl.dropbox.com/u/1117930/sites/aaron/js/modernizr.selectors.js"></script>
 </head>
 <body>
-  
+
   <header class="vcard" role="banner">
     <hgroup>
       <h1 class="fn"><a href="/" rel="home">{Title}</a></h1>
@@ -59,81 +49,77 @@
   <div role="main">
   <div>
 
-    <!-- {block:Pagination} -->
+    {block:Pagination}
     <nav class="pagination">
       <ul>
-        <!-- {block:PreviousPage} -->
+        {block:PreviousPage}
         <li class="prev">
           <a href="{PreviousPage}">previous</a>
         </li>
-        <!-- {/block:PreviousPage} -->
-        <!-- {block:NextPage} -->
+        {/block:PreviousPage}
+        {block:NextPage}
         <li class="next">
           <a href="{NextPage}">next</a>
         </li>
-        <!-- {/block:NextPage} -->
+        {/block:NextPage}
       </ul>
     </nav>
-    <!-- {/block:Pagination} -->
+    {/block:Pagination}
 
-    <!-- {block:PermalinkPagination} -->
+    {block:PermalinkPagination}
     <nav class="pagination">
       <ul>
-        <!-- {block:PreviousPost} -->
+        {block:PreviousPost}
         <li class="prev">
           <a href="{PreviousPost}">previous</a>
         </li>
-        <!-- {/block:PreviousPost} -->
-        <!-- {block:NextPost} -->
+        {/block:PreviousPost}
+        {block:NextPost}
         <li class="next">
           <a href="{NextPost}">next</a>
         </li>
-        <!-- {/block:NextPost} -->
+        {/block:NextPost}
       </ul>
     </nav>
-    <!-- {/block:PermalinkPagination} -->
+    {/block:PermalinkPagination}
 
-    <!-- {block:Posts} -->
+    {block:Posts}
     <article class="post {PostType}">
 
-      <!-- {block:Photo} -->
+      {block:Photo}
         <figure class="img">
-        <!-- {LinkOpenTag} -->
-        <!-- {PhotoURL-HighRes} -->
-        <a href="#"><img src="img/mockup/at_buddy3.jpg" alt="{PhotoAlt}"/></a>
-        <!-- {LinkCloseTag} -->
+          {LinkOpenTag}<img src="{PhotoURL-500}" alt="{PhotoAlt}"/>{LinkCloseTag}
         </figure>
-        
-        <!-- {block:Caption} -->
+
+        {block:Caption}
         <div class="body">
-          <!-- {Caption} -->
+          {Caption}
         </div>
-        <!-- {/block:Caption} -->
+        {/block:Caption}
+      {/block:Photo}
 
-      <!-- {/block:Photo} -->
-
-      <footer class="info"> 
-        <!-- {block:IndexPage} -->
+      <footer class="info">
+        {block:IndexPage}
         <a href="{Permalink}" class="permalink">permalink</a>
-        <!-- {/block:IndexPage} -->
-       
-        <!-- {block:Date} -->
+        {/block:IndexPage}
+
+        {block:Date}
         <time datetime="{Year}-{MonthNumberWithZero}-{DayOfMonthWithZero}" pubdate>
           {ShortMonth} {DayOfMonth}, {Year}
         </time>
-        <!-- {/block:Date} -->
+        {/block:Date}
 
-        <!-- {block:HasTags} -->
+        {block:HasTags}
         <ul class="tags">
-          <!-- {block:Tags} -->
+          {block:Tags}
           <li><a href="{TagURL}" rel="tag">{Tag}</a></li>
-          <!-- {/block:Tags} -->
+          {/block:Tags}
         </ul>
-        <!-- {/block:HasTags} -->
+        {/block:HasTags}
       </footer>
 
     </article>
-    <!-- {/block:Posts} -->
+    {/block:Posts}
 
   </div>
   </div>
@@ -151,19 +137,10 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.7.2.min.js"><\/script>')</script>
 
   <!-- scripts concatenated and minified via build script -->
-  <script src="js/vendor/jqwidont.js"></script>
-  <script src="js/viewport.js"></script>
+  <script src="http://dl.dropbox.com/u/1117930/sites/aaron/js/vendor/jqwidont.js"></script>
+  <script src="http://dl.dropbox.com/u/1117930/sites/aaron/js/viewport.js"></script>
   <!-- script src="js/plugins.js"></script -->
   <!-- script src="js/main.js"></script -->
   <!-- end scripts -->
-
-  <!-- Asynchronous Google Analytics snippet. Change UA-XXXXX-X to be your site's ID.
-       mathiasbynens.be/notes/async-analytics-snippet -->
-  <script>
-    var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
-    (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-    g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
-    s.parentNode.insertBefore(g,s)}(document,'script'));
-  </script>
 </body>
 </html>
