@@ -10,103 +10,87 @@ $cond-stack : 'FranklinGothicFSCd', 'Helvetica Neue', Arial, Helvetica, sans-ser
 // Franklin Gothic Book
 @include font-face (
   'FranklinGothicFS',
-  font-files(
-    'FranklinGothic-Book-webfont.woff', 'woff', 
-    'FranklinGothic-Book-webfont.ttf', 'truetype', 
-    'FranklinGothic-Book-webfont.svg#webfont', 'svg'
+  inline-font-files(
+    'FranklinGothic-Book-webfont.woff', woff
   ),
   'FranklinGothic-Book-webfont.eot',
   $weight : normal,
-  $style  : normal 
+  $style  : normal
 );
 
 // Franklin Gothic Book Italic
-@include font-face ( 
+@include font-face (
   'FranklinGothicFS',
-  font-files(
-    'FranklinGothic-BookIt-webfont.woff', 'woff', 
-    'FranklinGothic-BookIt-webfont.ttf', 'truetype', 
-    'FranklinGothic-BookIt-webfont.svg#webfont', 'svg'
+  inline-font-files(
+    'FranklinGothic-BookIt-webfont.woff', woff
   ),
   'FranklinGothic-BookIt-webfont.eot',
   $weight : normal,
-  $style  : italic 
+  $style  : italic
 );
 
 // Franklin Gothic Demi
-@include font-face ( 
+@include font-face (
   'FranklinGothicFS',
-  font-files(
-    'FranklinGothic-Demi-webfont.woff', 'woff', 
-    'FranklinGothic-Demi-webfont.ttf', 'truetype', 
-    'FranklinGothic-Demi-webfont.svg#webfont', 'svg'
+  inline-font-files(
+    'FranklinGothic-Demi-webfont.woff', woff
   ),
   'FranklinGothic-Demi-webfont.eot',
   $weight : bold,
-  $style  : normal 
+  $style  : normal
 );
 
 // Franklin Gothic Demi Italic
-@include font-face ( 
+@include font-face (
   'FranklinGothicFS',
-  font-files(
-    'FranklinGothic-DemiIt-webfont.woff', 'woff', 
-    'FranklinGothic-DemiIt-webfont.ttf', 'truetype', 
-    'FranklinGothic-DemiIt-webfont.svg#webfont', 'svg'
+  inline-font-files(
+    'FranklinGothic-DemiIt-webfont.woff', woff
   ),
   'FranklinGothic-DemiIt-webfont.eot',
   $weight : bold,
-  $style  : italic 
+  $style  : italic
 );
 
 // Franklin Gothic Condensed
-@include font-face ( 
+@include font-face (
   'FranklinGothicFSCd',
-  font-files(
-    'FranklinGothic-Cd-webfont.woff', 'woff', 
-    'FranklinGothic-Cd-webfont.ttf', 'truetype', 
-    'FranklinGothic-Cd-webfont.svg#webfont', 'svg'
+  inline-font-files(
+    'FranklinGothic-Cd-webfont.woff', woff
   ),
   'FranklinGothic-Cd-webfont.eot',
   $weight : normal,
-  $style  : normal 
+  $style  : normal
 );
 
 // Franklin Gothic Condensed Italic
-@include font-face ( 
+@include font-face (
   'FranklinGothicFSCd',
-  font-files(
-    'FranklinGothic-CdIt-webfont.woff', 'woff', 
-    'FranklinGothic-CdIt-webfont.ttf', 'truetype', 
-    'FranklinGothic-CdIt-webfont.svg#webfont', 'svg'
+  inline-font-files(
+    'FranklinGothic-CdIt-webfont.woff', woff
   ),
   'FranklinGothic-CdIt-webfont.eot',
   $weight : normal,
-  $style  : italic 
+  $style  : italic
 );
 
 // Franklin Gothic Condensed Demi
-@include font-face ( 
+@include font-face (
   'FranklinGothicFSCd',
-  font-files(
-    'FranklinGothic-DemiCd-webfont.woff', 'woff', 
-    'FranklinGothic-DemiCd-webfont.ttf', 'truetype', 
-    'FranklinGothic-DemiCd-webfont.svg#webfont', 'svg'
+  inline-font-files(
+    'FranklinGothic-DemiCd-webfont.woff', woff
   ),
   'FranklinGothic-DemiCd-webfont.eot',
   $weight : bold,
-  $style  : normal 
+  $style  : normal
 );
 
 // Franklin Gothic Condensed Demi Italic
-@include font-face ( 
+@include font-face (
   'FranklinGothicFSCd',
-  font-files(
-    'FranklinGothic-DemiCdIt-webfont.woff', 'woff', 
-    'FranklinGothic-DemiCdIt-webfont.ttf', 'truetype', 
-    'FranklinGothic-DemiCdIt-webfont.svg#webfont', 'svg'
+  inline-font-files(
+    'FranklinGothic-DemiCdIt-webfont.woff', woff
   ),
   'FranklinGothic-DemiCdIt-webfont.eot',
   $weight : bold,
-  $style  : italic 
+  $style  : italic
 );

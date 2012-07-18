@@ -7,16 +7,16 @@ Icon Set: Entypo
 License:  CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
 */
 
-@font-face {
-  font-family: 'IcoMoon';
-  src: font-url('IcoMoon.eot');
-  src: font-url('IcoMoon.eot?#iefix') format('embedded-opentype'),
-    font-url('IcoMoon.svg#IcoMoon') format('svg'),
-    font-url('IcoMoon.woff') format('woff'),
-    font-url('IcoMoon.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+@include font-face (
+  'IcoMoon',
+  inline-font-files(
+    'IcoMoon.woff', woff,
+    'IcoMoon.ttf', truetype
+  ),
+  'IcoMoon.eot',
+  normal,
+  normal
+);
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
 [data-icon]:before {
