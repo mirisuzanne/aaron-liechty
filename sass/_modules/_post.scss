@@ -1,30 +1,7 @@
 //-----------------------------------------------------------------------------
-// Single Post
+// Post Basics
 
-.post {
-  @include pie-clearfix;
-  @include trailing-border(3px,1);
-  @include trailer;
-  border-color: $base2;
-  &:last-child {
-    border-bottom: 0;
-    padding-bottom: 0;
-    margin-bottom: 0;
-  }
-}
-
-.body, .info {
-  @include at-breakpoint($break) {
-    @include span-columns(4 omega, 12);
-  }
-}
-
-.img {
-  text-align: right;
-  @include at-breakpoint($break) {
-    @include span-columns(8, 12);
-  }
-}
+.post { @include trailer; }
 
 .body {
   @extend %type;
@@ -42,4 +19,57 @@
   @extend %icon;
   @extend %icon-bookmark;
   @extend %no-text-icon;
+}
+
+//-----------------------------------------------------------------------------
+// Single Post
+
+.postpage {
+  .post {
+    @include pie-clearfix;
+    @include trailing-border(3px,1);
+    border-color: $base2;
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .body, .info {
+    @include at-breakpoint($break) {
+      @include span-columns(4 omega, 12);
+    }
+  }
+
+  .img {
+    text-align: right;
+    @include at-breakpoint($break) {
+      @include span-columns(8, 12);
+    }
+  }
+}
+
+//-----------------------------------------------------------------------------
+// Thumbnails
+
+.indexpage {
+  .post {
+    @include span-columns(3);
+    @include nth-omega(even);
+  }
+
+  .tags {
+    @include inline-block-list;
+    li { margin-right: .4em; }
+  }
+
+  @include at-breakpoint($break) {
+    .post {
+      @include span-columns(3);
+      @include remove-nth-omega(even);
+      @include nth-omega(4n);
+      &:nth-child(4n+1) { clear: left; }
+    }
+  }
 }

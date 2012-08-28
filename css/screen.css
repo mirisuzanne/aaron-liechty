@@ -166,7 +166,7 @@ License:  CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
 }
 
 /* Use the following CSS code if you want to have a class per icon */
-[rel="tag"]:before, .pagination a:before, .permalink:before {
+[rel="tag"]:before, [role="main"] .tagtitle:before, .pagination a:before, .permalink:before {
   font-family: 'IcoMoon';
   font-style: normal;
   speak: none;
@@ -192,7 +192,7 @@ License:  CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
   content: "\2192";
 }
 
-[rel="tag"]:before {
+[rel="tag"]:before, [role="main"] .tagtitle:before {
   content: "\2617";
 }
 
@@ -492,13 +492,35 @@ h1 {
   padding-bottom: 12.5em;
   background: url('../img/city-dark2.png?1338529404') repeat-x scroll -25% bottom;
 }
+[role="main"] .tagtitle {
+  font-size: 1.9375em;
+  line-height: 1.29032em;
+  margin-bottom: 0.32258em;
+  position: relative;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+[role="main"] .tagtitle::before {
+  margin-right: .25em;
+  color: #dc322f;
+}
 @media (min-width: 61em) {
   [role="main"] {
     padding-bottom: 15em;
   }
+  [role="main"] .tagtitle::before {
+    position: absolute;
+    top: 0;
+    right: 100%;
+  }
 }
 .lt-ie9 [role="main"] {
   padding-bottom: 15em;
+}
+.lt-ie9 [role="main"] .tagtitle::before {
+  position: absolute;
+  top: 0;
+  right: 100%;
 }
 
 .pagination {
@@ -512,12 +534,21 @@ h1 {
   clear: both;
 }
 @media (min-width: 61em) {
-  .pagination {
+  .pagination.postnav {
     padding-right: 33.89831%;
   }
 }
-.lt-ie9 .pagination {
+.lt-ie9 .pagination.postnav {
   padding-right: 33.89831%;
+}
+.pagination:last-child {
+  -webkit-border-radius: 0.25em;
+  -moz-border-radius: 0.25em;
+  -ms-border-radius: 0.25em;
+  -o-border-radius: 0.25em;
+  border-radius: 0.25em;
+  clear: both;
+  background: rgba(238, 232, 213, 0.5);
 }
 .pagination a:link, .pagination a:visited {
   -webkit-transition: all 150ms;
@@ -592,57 +623,7 @@ h1 {
 }
 
 .post {
-  *zoom: 1;
-  border-bottom-style: solid;
-  border-bottom-width: 0.1875em;
-  padding-bottom: 1.0625em;
   margin-bottom: 1.25em;
-  border-color: #eee8d5;
-}
-.post:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.post:last-child {
-  border-bottom: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-}
-
-@media (min-width: 61em) {
-  .body, .info {
-    width: 32.20339%;
-    float: right;
-    margin-right: 0;
-    #margin-left: -1em;
-    display: inline;
-  }
-}
-.lt-ie9 .body, .lt-ie9 .info {
-  width: 32.20339%;
-  float: right;
-  margin-right: 0;
-  #margin-left: -1em;
-  display: inline;
-}
-
-.img {
-  text-align: right;
-}
-@media (min-width: 61em) {
-  .img {
-    width: 66.10169%;
-    float: left;
-    margin-right: 1.69492%;
-    display: inline;
-  }
-}
-.lt-ie9 .img {
-  width: 66.10169%;
-  float: left;
-  margin-right: 1.69492%;
-  display: inline;
 }
 
 .body {
@@ -655,4 +636,134 @@ h1 {
   margin-bottom: 1.53846em;
   color: #93a1a1;
   text-transform: uppercase;
+}
+
+.postpage .post {
+  *zoom: 1;
+  border-bottom-style: solid;
+  border-bottom-width: 0.1875em;
+  padding-bottom: 1.0625em;
+  border-color: #eee8d5;
+}
+.postpage .post:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.postpage .post:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+@media (min-width: 61em) {
+  .postpage .body, .postpage .info {
+    width: 32.20339%;
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
+  }
+}
+.lt-ie9 .postpage .body, .lt-ie9 .postpage .info {
+  width: 32.20339%;
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+  display: inline;
+}
+.postpage .img {
+  text-align: right;
+}
+@media (min-width: 61em) {
+  .postpage .img {
+    width: 66.10169%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+}
+.lt-ie9 .postpage .img {
+  width: 66.10169%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+
+.indexpage .post {
+  width: 48.27586%;
+  float: left;
+  margin-right: 3.44828%;
+  display: inline;
+}
+.indexpage .post:nth-child(even) {
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+  display: inline;
+}
+.indexpage .tags {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+.indexpage .tags li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  white-space: nowrap;
+}
+.indexpage .tags li {
+  *display: inline;
+}
+.indexpage .tags li {
+  margin-right: .4em;
+}
+@media (min-width: 61em) {
+  .indexpage .post {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%;
+    display: inline;
+  }
+  .indexpage .post:nth-child(even) {
+    float: left;
+    margin-right: 1.69492%;
+    #margin-left: 0;
+  }
+  .indexpage .post:nth-child(4n) {
+    float: right;
+    margin-right: 0;
+    #margin-left: -1em;
+    display: inline;
+  }
+  .indexpage .post:nth-child(4n+1) {
+    clear: left;
+  }
+}
+.lt-ie9 .indexpage .post {
+  width: 23.72881%;
+  float: left;
+  margin-right: 1.69492%;
+  display: inline;
+}
+.lt-ie9 .indexpage .post:nth-child(even) {
+  float: left;
+  margin-right: 1.69492%;
+  #margin-left: 0;
+}
+.lt-ie9 .indexpage .post:nth-child(4n) {
+  float: right;
+  margin-right: 0;
+  #margin-left: -1em;
+  display: inline;
+}
+.lt-ie9 .indexpage .post:nth-child(4n+1) {
+  clear: left;
 }

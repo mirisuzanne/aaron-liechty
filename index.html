@@ -46,28 +46,15 @@
     </hgroup>
   </header>
 
-  <div role="main">
+  <div role="main" {block:PermalinkPage}class="postpage"{/block:PermalinkPage}>
   <div>
 
-    {block:Pagination}
-    <nav class="pagination">
-      <ul>
-        {block:PreviousPage}
-        <li class="prev">
-          <a href="{PreviousPage}">previous</a>
-        </li>
-        {/block:PreviousPage}
-        {block:NextPage}
-        <li class="next">
-          <a href="{NextPage}">next</a>
-        </li>
-        {/block:NextPage}
-      </ul>
-    </nav>
-    {/block:Pagination}
+    {block:TagPage}
+      <h2 class="tagtitle">{Tag}</h2>
+    {/block:TagPage}
 
     {block:PermalinkPagination}
-    <nav class="pagination">
+    <nav class="pagination postnav">
       <ul>
         {block:PreviousPost}
         <li class="prev">
@@ -83,19 +70,47 @@
     </nav>
     {/block:PermalinkPagination}
 
+    {block:Pagination}
+    <nav class="pagination thumbnav">
+      <ul>
+        {block:PreviousPage}
+        <li class="prev">
+          <a href="{PreviousPage}">previous</a>
+        </li>
+        {/block:PreviousPage}
+        {block:NextPage}
+        <li class="next">
+          <a href="{NextPage}">next</a>
+        </li>
+        {/block:NextPage}
+      </ul>
+    </nav>
+    {/block:Pagination}
+
+    {block:IndexPage}<section class="indexpage{block:TagPage} tagpage{/block:TagPage}">{/block:IndexPage}
+
     {block:Posts}
     <article class="post {PostType}">
 
       {block:Photo}
         <figure class="img">
-          {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>{LinkCloseTag}
+          {block:IndexPage}
+            <a href="{Permalink}">
+              <img src="{PhotoURL-250}" alt="{PhotoAlt}"/>
+            </a>
+          {/block:IndexPage}
+          {block:PermalinkPage}
+            {LinkOpenTag}<img src="{PhotoURL-HighRes}" alt="{PhotoAlt}"/>{LinkCloseTag}
+          {/block:PermalinkPage}
         </figure>
 
-        {block:Caption}
-        <div class="body">
-          {Caption}
-        </div>
-        {/block:Caption}
+        {block:PermalinkPage}
+          {block:Caption}
+          <div class="body">
+            {Caption}
+          </div>
+          {/block:Caption}
+        {/block:PermalinkPage}
       {/block:Photo}
 
       <footer class="info">
@@ -112,7 +127,7 @@
         {block:HasTags}
         <ul class="tags">
           {block:Tags}
-          <li><a href="{TagURL}" rel="tag">{Tag}</a></li>
+          <li><a href="{TagURLChrono}" rel="tag">{Tag}</a></li>
           {/block:Tags}
         </ul>
         {/block:HasTags}
@@ -120,6 +135,25 @@
 
     </article>
     {/block:Posts}
+
+    {block:IndexPage}</section>{/block:IndexPage}
+
+    {block:Pagination}
+    <nav class="pagination thumbnav">
+      <ul>
+        {block:PreviousPage}
+        <li class="prev">
+          <a href="{PreviousPage}">previous</a>
+        </li>
+        {/block:PreviousPage}
+        {block:NextPage}
+        <li class="next">
+          <a href="{NextPage}">next</a>
+        </li>
+        {/block:NextPage}
+      </ul>
+    </nav>
+    {/block:Pagination}
 
   </div>
   </div>

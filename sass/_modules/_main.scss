@@ -4,14 +4,39 @@
 [role="main"] {
   @include padding-trailer(10);
   background: image-url('city-dark2.png') repeat-x scroll -25% bottom;
-  @include at-breakpoint($break) { @include padding-trailer(12); }
+  .tagtitle {
+    @extend %icon;
+    @extend %icon-tag;
+    @include adjust-font-size-to($largepx);
+    @include trailer(.5,$largepx);
+    position: relative;
+    font-weight: bold;
+    text-transform: uppercase;
+    &::before {
+      margin-right: .25em;
+      color: $red;
+    }
+  }
+  @include at-breakpoint($break) {
+    @include padding-trailer(12);
+    .tagtitle::before {
+      position: absolute;
+      top: 0;
+      right: 100%;
+    }
+  }
 }
 
 .pagination {
   @include pie-clearfix;
   @include adjust-font-size-to($xlargepx);
   @include at-breakpoint($break) {
-    @include suffix(4,12);
+    &.postnav { @include suffix(4,12); }
+  }
+  &:last-child {
+    @include border-radius(.25em);
+    clear: both;
+    background: rgba($base2,.5);
   }
   a {
     @extend %icon;
