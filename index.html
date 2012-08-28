@@ -159,6 +159,15 @@
   </div>
 
   <div class="meta">
+    {block:HasPages}
+    <nav role="navigation">
+      <h2 class="navhead">Browse by Tag</h2>
+      <ul>
+        {block:Pages}<li class="tag"><a href="{URL}" rel="tag">{Label}</a></li>{/block:Pages}
+      </ul>
+    </nav>
+    {/block:HasPages}
+
     <footer role="contentinfo">
       <p class="license">copyright &copy; {CopyrightYears} <b>{Title}</b> <i>all rights reserved</i></p>
     </footer>

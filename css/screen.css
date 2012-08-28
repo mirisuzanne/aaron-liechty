@@ -489,7 +489,7 @@ h1 {
 }
 
 [role="main"] {
-  padding-bottom: 12.5em;
+  padding-bottom: 5em;
   background: url('../img/city-dark2.png?1338529404') repeat-x scroll -25% bottom;
 }
 [role="main"] .tagtitle {
@@ -548,7 +548,7 @@ h1 {
   -o-border-radius: 0.25em;
   border-radius: 0.25em;
   clear: both;
-  background: rgba(238, 232, 213, 0.5);
+  background: rgba(238, 232, 213, 0.95);
 }
 .pagination a:link, .pagination a:visited {
   -webkit-transition: all 150ms;
@@ -580,7 +580,7 @@ h1 {
   border-bottom-style: solid;
   border-bottom-width: 0.1875em;
   padding-bottom: 1.0625em;
-  margin-bottom: 1.25em;
+  margin-bottom: 2.5em;
   border-color: #b58900;
 }
 @media (min-width: 61em) {
@@ -604,6 +604,40 @@ h1 {
   -moz-column-gap: 1em;
   -ms-column-gap: 1em;
   column-gap: 1em;
+}
+[role="navigation"] .navhead {
+  color: #eee8d5;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: .01em;
+}
+[role="navigation"] .navhead, [role="navigation"] ul {
+  display: inline-block;
+  vertical-align: middle;
+}
+[role="navigation"] .navhead, [role="navigation"] li {
+  margin-right: 1.25em;
+}
+[role="navigation"] ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  *zoom: 1;
+}
+[role="navigation"] ul li {
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+  display: -moz-inline-box;
+  -moz-box-orient: vertical;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  white-space: nowrap;
+}
+[role="navigation"] ul li {
+  *display: inline;
 }
 
 .meta {

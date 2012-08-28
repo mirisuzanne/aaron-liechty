@@ -2,7 +2,7 @@
 // Main Content
 
 [role="main"] {
-  @include padding-trailer(10);
+  @include padding-trailer(4);
   background: image-url('city-dark2.png') repeat-x scroll -25% bottom;
   .tagtitle {
     @extend %icon;
@@ -36,7 +36,7 @@
   &:last-child {
     @include border-radius(.25em);
     clear: both;
-    background: rgba($base2,.5);
+    background: rgba($base2,.95);
   }
   a {
     @extend %icon;
