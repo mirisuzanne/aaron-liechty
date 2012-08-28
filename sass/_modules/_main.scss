@@ -29,8 +29,6 @@
   li {
     float: left;
     width: 1em;
-    + li {
-      float: right;
-    }
+    &.next { float: right; }
   }
 }
