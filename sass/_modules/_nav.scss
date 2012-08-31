@@ -5,18 +5,18 @@
   @include h-borders(3px,1);
   @include trailer(2);
   border-color: $alt;
-  @include at-breakpoint($break) {
-    @include column-width($column-width*2 + $gutter-width);
-    @include column-gap($gutter-width);
-  }
 
   .navhead {
+    display: inline-block;
     color: $base2;
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .01em;
+    vertical-align: middle;
   }
-  .navhead, ul { display: inline-block; vertical-align: middle; }
-  .navhead, li { margin-right: rhythm(1); }
-  ul { @include inline-block-list; }
+  ul {
+    @include inline-block-list;
+    display: inline;
+  }
+  .navhead, .tag { margin-right: rhythm(1); }
 }
