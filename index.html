@@ -42,7 +42,7 @@
   <header class="vcard" role="banner">
     <hgroup>
       <h1 class="fn"><a href="/" rel="home">{Title}</a></h1>
-      <h2 class="title">Illustrator</h2>
+      <h2 class="title">{Description}</h2>
     </hgroup>
   </header>
 
@@ -56,16 +56,16 @@
     {block:PermalinkPagination}
     <nav class="pagination postnav">
       <ul>
-        {block:PreviousPost}
-        <li class="prev">
-          <a href="{PreviousPost}">previous</a>
-        </li>
-        {/block:PreviousPost}
         {block:NextPost}
-        <li class="next">
-          <a href="{NextPost}">next</a>
+        <li class="prev">
+          <a href="{NextPost}">previous</a>
         </li>
         {/block:NextPost}
+        {block:PreviousPost}
+        <li class="next">
+          <a href="{PreviousPost}">next</a>
+        </li>
+        {/block:PreviousPost}
       </ul>
     </nav>
     {/block:PermalinkPagination}
@@ -127,7 +127,7 @@
         {block:HasTags}
         <ul class="tags">
           {block:Tags}
-          <li><a href="{TagURLChrono}" rel="tag">{Tag}</a></li>
+          <li><a href="{TagURL}" rel="tag">{Tag}</a></li>
           {/block:Tags}
         </ul>
         {/block:HasTags}
