@@ -5,6 +5,8 @@
   @include padding-trailer;
   @include text-shadow(rgba($amore,.5) 0 1px 0);
   background: $anti;
+
+  @if $site == jacob { padding-top: rhythm(2); }
 }
 
 [role="contentinfo"] {
@@ -13,6 +15,6 @@
   text-transform: uppercase;
   b {
     color: $base00;
-    font-weight: bold; 
+    font-weight: bold;
   }
 }

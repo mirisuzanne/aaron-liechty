@@ -21,8 +21,23 @@ $green:     #859900;
 // ---------------------------------------------------------------------------
 // Color System
 
+$grid-background-column-color: rgba(lighten($base3,5%),.5);
+
 $base             : $base01;
 $alt              : $yellow;
 $accent           : $red;
 
-$grid-background-column-color: rgba(lighten($base3,5%),.5);
+@mixin set-colors($site: $site) {
+  @if $site == aaron {
+    $base             : $base01;
+    $alt              : $yellow;
+    $accent           : $red;
+  }
+  @if $site == jacob {
+    $base             : $base1;
+    $alt              : $cyan;
+    $accent           : $violet;
+  }
+}
+
+@include set-colors;

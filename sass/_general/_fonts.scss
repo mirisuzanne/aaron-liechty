@@ -3,12 +3,48 @@
 
 @import "font-license";
 @import "franklin-gothic";
+@import "square-serif";
 @import "icomoon";
 
 //-----------------------------------------------------------------------------
 // Settings
 
 $serif-stack  : Georgia, serif;
+$sans-stack   : 'FranklinGothicFS', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+$cond-stack   : 'FranklinGothicFSCd', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+$fonts        : $fg, $fgitalic, $fgbold, $fgboldit,
+                $fgcd, $fgcditalic, $fgcdbold, $fgcdboldit;
+
+@if $site == jacob {
+  $sans-stack : 'SquareSerif', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  $cond-stack : 'SquareSerif', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+
+  $fonts      : $ss, $ssitalic, $ssbold, $ssboldit;
+}
+
+
+/* ----------------------------------------------------------------------------
+  fonts */
+
+@mixin font($font, $exact: false) {
+  $name: nth($font,1);
+  $location: nth($font,2);
+  $weight: if(nth($font,3), nth($font,3), normal);
+  $style: if(nth($font,4), nth($font,4), normal);
+  @include font-face(
+    $name,
+    inline-font-files(
+      '#{$location}.woff', woff,
+      '#{$location}.ttf', truetype
+    ),
+    false,
+    $weight,
+    $style
+  );
+}
+
+@each $font in $fonts { @include font($font); }
 
 //-----------------------------------------------------------------------------
 // Mixins

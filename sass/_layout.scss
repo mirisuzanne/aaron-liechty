@@ -8,7 +8,7 @@
 
   @include at-breakpoint($break) {
     @include container;
-    @include susy-grid-background;  
+    @include susy-grid-background;
   }
 }
 
@@ -18,4 +18,8 @@
 [role="navigation"] {
   @extend %container;
   clear: both;
+}
+
+.meta {
+  ~ img[src*="tumblr"] { display: none; }
 }

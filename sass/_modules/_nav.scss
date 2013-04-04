@@ -8,7 +8,7 @@
 
   .navhead {
     display: inline-block;
-    color: $base2;
+    color: if($theme == light, $base2, $base02);
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: .01em;

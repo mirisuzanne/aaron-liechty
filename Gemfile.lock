@@ -1,24 +1,49 @@
+GIT
+  remote: git://github.com/chriseppstein/compass
+  revision: cb563c86ec73670521c2be3667f3f0c7e5da0bdc
+  branch: master
+  specs:
+    compass (0.13.alpha.3.cb563c8)
+      chunky_png (~> 1.2)
+      listen (<= 0.9.9)
+      sass (~> 3.2.5)
+
+GIT
+  remote: git://github.com/ericam/accoutrement
+  revision: 92b0099dd21f0a2238bea582c2559dc71cdddd82
+  branch: master
+  specs:
+    accoutrement (0.0.5)
+      compass (>= 0.12.2)
+
+GIT
+  remote: git://github.com/ericam/susy
+  revision: 5865792ceb92055e013a4e1e8242429ca499aa4d
+  branch: master
+  specs:
+    susy (1.0.8)
+      compass (>= 0.12.2)
+      sass (>= 3.2.0)
+
 GEM
   remote: http://rubygems.org/
   specs:
-    chunky_png (1.2.5)
-    compass (0.13.alpha.0)
-      chunky_png (~> 1.2)
-      fssm (>= 0.2.7)
-      sass (~> 3.2.0.alpha.93)
-    fssm (0.2.9)
-    modular-scale (0.0.5)
-      compass (>= 0.11.5)
-    sass (3.2.0.alpha.275)
-    susy (1.0.rc.3)
-      compass (>= 0.12.2)
-      sass (>= 3.2.0.alpha.247)
+    chunky_png (1.2.8)
+    listen (0.7.3)
+    modular-scale (1.0.6)
+      compass (>= 0.12.1)
+      sass (>= 3.2.0)
+      sassy-math (>= 1.5)
+    sass (3.2.7)
+    sassy-math (1.5)
+      compass (~> 0.11)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  compass (~> 0.13.alpha.0)
-  modular-scale (~> 0.0.5)
-  sass (~> 3.2.0.alpha.257)
-  susy (~> 1.0.rc.3)
+  accoutrement!
+  compass!
+  modular-scale (~> 1.0.2)
+  sass (~> 3.2.1)
+  susy!

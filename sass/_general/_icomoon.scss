@@ -9,10 +9,7 @@ License:  CC BY-SA 3.0 -- http://creativecommons.org/licenses/by-sa/3.0/
 
 @include font-face (
   'IcoMoon',
-  inline-font-files(
-    'IcoMoon.woff', woff,
-    'IcoMoon.ttf', truetype
-  ),
+  inline-font-files('IcoMoon.woff', woff),
   'IcoMoon.eot',
   normal,
   normal

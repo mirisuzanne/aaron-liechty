@@ -10,7 +10,6 @@
 $link   : '&:link, &:visited';
 $focus  : '&:hover, &:focus, &:active';
 
-$theme  : light;
 $back   : if($theme == light, $base3, $base03);
 $more   : if($theme == light, white, black);
 $amore  : if($theme == light, black, white);;

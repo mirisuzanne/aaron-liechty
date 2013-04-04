@@ -3,7 +3,11 @@
 
 [role="main"] {
   @include padding-trailer(4);
-  background: image-url('city-dark2.png') repeat-x scroll -25% bottom;
+  @if $site == aaron {
+    background: image-url('city-dark2.png') repeat-x scroll -25% bottom;
+  } @else {
+    background: image-url('grass.png') repeat-x scroll -25% bottom;
+  }
   .tagtitle {
     @extend %icon;
     @extend %icon-tag;
@@ -14,7 +18,7 @@
     text-transform: uppercase;
     &::before {
       margin-right: .25em;
-      color: $red;
+      color: $accent;
     }
   }
   @include at-breakpoint($break) {
@@ -36,7 +40,7 @@
   &:last-child {
     @include border-radius(.25em);
     clear: both;
-    background: rgba($base2,.95);
+    background: if($theme == light, rgba($base2,.95), rgba($base02,.95));
   }
   a {
     @extend %icon;
